@@ -43,7 +43,7 @@
            </td>
            <td v-on:click="toggle">
               <router-link to="/shouhuo">
-                 <img src="../../assets/receiving.png" class="info-shouhuo"/>
+                  <img src="../../assets/receiving.png" class="info-shouhuo"/>
                   <span class="shouhuo-txt">退货</span>
               </router-link>
            </td>
@@ -65,7 +65,10 @@ export default {
   },
    methods:{
          toggle:function(){
-            this.$emit("listenChildren",this.$data.num=0)
+            this.$emit("listenChildren",this.$data.num=0);
+            if(this.$data.num==0){
+               this.$data.isShow==false
+            }
          }
       }
 }
@@ -75,7 +78,7 @@ export default {
 <style scoped>
    .info-wrap{
       width:100%;
-   }
+    }
    .info-header{
       width:100%;
       height:2.3rem;
