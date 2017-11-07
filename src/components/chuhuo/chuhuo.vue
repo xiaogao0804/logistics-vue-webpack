@@ -1,24 +1,29 @@
 <template>
-    <div class="shouhuo-wrap">
-
+    <div class="chuhuo-wrap">
+     <PublicHeader v-bind:msg="name"></PublicHeader>
     </div>
 </template>
 
 
 <script>
+    import PublicHeader from '../header/header.vue'
+
     export default {
       name: 'chuhuo',
       data () {
         return {
-          msg: 'Welcome to Your Vue.js App'
+          name:'出货'
         }
+      },
+      components:{
+         PublicHeader
       }
     }
 </script>
 
 
 <style>
-    .shouhuo-wrap{
+    .chuhuo-wrap{
        width:100%;
        height:5rem;
        background-color:green;

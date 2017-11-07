@@ -1,6 +1,6 @@
 <template>
    <div class="publicHeader">
-       <img src="../../assets/back.png"/>
+       <img @click="back" src="../../assets/back.png"/>
        <div class="header-name">{{msg}}</div>
    </div>
 </template>
@@ -13,6 +13,11 @@
          return {
 
          }
+       },
+       methods:{
+           back:()=>{
+             window.location.href = document.referrer;     //返回上一页并刷新
+           }  
        }
     }
 </script>
