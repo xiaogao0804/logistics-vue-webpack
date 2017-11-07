@@ -1,12 +1,17 @@
 <template>
     <div class="chuhuo-wrap">
      <PublicHeader v-bind:msg="name"></PublicHeader>
+     <PublicDate></PublicDate>
+     <PublicList></PublicList>
+
     </div>
 </template>
 
 
 <script>
     import PublicHeader from '../header/header.vue'
+    import PublicDate from '../date/date.vue'
+    import PublicList from '../lists/list.vue'
 
     export default {
       name: 'chuhuo',
@@ -16,7 +21,10 @@
         }
       },
       components:{
-         PublicHeader
+         PublicHeader,
+         PublicDate,
+         PublicList
+
       }
     }
 </script>
@@ -26,6 +34,5 @@
     .chuhuo-wrap{
        width:100%;
        height:5rem;
-       background-color:green;
     }
 </style>
