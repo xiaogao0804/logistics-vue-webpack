@@ -21,8 +21,8 @@
            </td>
         </tr>
         <tr>
-           <td>
-           <router-link to="/shouhuo">
+           <td v-on:click="toggle">
+           <router-link to="/dingdan">
               <img src="../../assets/receiving.png" class="info-shouhuo"/>
               <span class="shouhuo-txt">订单</span>
            </router-link>

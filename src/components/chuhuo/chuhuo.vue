@@ -17,7 +17,7 @@
       name: 'chuhuo',
       data () {
         return {
-          name:'出货'
+          name:'出货列表'
         }
       },
       components:{
