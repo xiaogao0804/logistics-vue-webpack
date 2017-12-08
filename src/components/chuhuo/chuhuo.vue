@@ -3,7 +3,6 @@
      <PublicHeader v-bind:msg="name"></PublicHeader>
      <PublicDate></PublicDate>
      <PublicList></PublicList>
-
     </div>
 </template>
 

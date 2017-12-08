@@ -27,8 +27,8 @@
               <span class="shouhuo-txt">订单</span>
            </router-link>
            </td>
-           <td>
-              <router-link to="/shouhuo">
+           <td v-on:click="toggle">
+              <router-link to="/pandian">
                  <img src="../../assets/receiving.png" class="info-shouhuo"/>
                  <span class="shouhuo-txt">盘点</span>
               </router-link>
