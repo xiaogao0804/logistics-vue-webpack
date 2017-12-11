@@ -7,6 +7,7 @@
          <h3>内容描述</h3>
          <p class="con-edit" contenteditable="true"></p>
        </div>
+       <Camera></Camera>
      </div>
   </div>
 </template>
@@ -14,6 +15,7 @@
 <script>
   import PublicHeader from '../header/header.vue'
   import Xian from '../xian/xian.vue'
+  import Camera from '../camera/camera.vue'
 
   export default {
     name:'danzheng',
@@ -25,7 +27,8 @@
     },
     components:{
       PublicHeader,
-      Xian
+      Xian,
+      Camera
     }
   }
 </script>
