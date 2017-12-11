@@ -35,8 +35,8 @@
            </td>
         </tr>
         <tr>
-           <td>
-           <router-link to="/shouhuo">
+           <td v-on:click="toggle">
+           <router-link to="/danzheng">
               <img src="../../assets/receiving.png" class="info-shouhuo"/>
               <span class="shouhuo-txt">单证</span>
            </router-link>

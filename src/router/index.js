@@ -4,6 +4,7 @@ import ShouHuo from '../components/shouhuo/shouhuo'
 import ChuHuo from '../components/chuhuo/chuhuo'
 import Dingdan from '../components/dingdan/dingdan'
 import Pandian from '../components/pandian/pandian'
+import Danzheng from '../components/danzheng/danzheng'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path:'/pandian',
       name:'pandian',
       component:Pandian
+    },
+    {
+      path:'/danzheng',
+      name:'danzheng',
+      component:Danzheng
     }
   ]
 })
